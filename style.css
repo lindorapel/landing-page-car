@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    padding-block: 25px;
+}
+
+/* Header */
+.custom-navbar{
+    padding: 12px 0;
+    background-color: rgba(241, 243, 255, 1);
+    z-index: 3;
+}
+
+.custom-navbar .custom-navlist li{
+    padding: 0 8px;
+}
+
+.custom-navlist li a{
+    color: black;
+}
+
+.custom-navlist li:last-child a{
+    margin-top: 8px;
+    padding:8px 12px;
+    background-color: rgba(92, 184, 95, 1);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    width: max-content;
+}
+
+/* hero section */
+.hero-section{
+    background-color: rgba(241, 243, 255, 1);
+}
+
+.hero-section .hero-text h1{
+    font-size: 36px;
+}
+
+.hero-section .hero-text p{
+    font-size: 14px;
+}
+
+.hero-section .hero-text button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(92, 184, 95, 1);
+    color: white;
+}
+
+/* our-service section */
+.our-service .custom-service .service-text ul li{
+    padding: 6px 0;
+}
+
+.our-service .custom-service .service-text ul li img{
+    margin-right: 10px;
+    padding: 4px;
+    background-color: rgba(207, 212, 237, 1);
+    color: rgba(13, 40, 166, 1);
+    border-radius: 100%;
+}
+
+/* why-us section */
+.why-us .list-item{
+    z-index: -1;
+}
+
+/* Testimonial */
+.testimonial .custom-star img{
+    width: 16px;
+    height: 16px;
+}
+
+/* cta-banner section */
+.cta-banner .custom-cta button{
+    margin-top: 24px;
+    color: white;
+    background-color: rgba(92, 184, 95, 1);
+    padding: 8px 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
+.custom-footer p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+footer{
+    padding-block: 0 50px;
+}
+
+@media (min-width:992px) {
+    section{
+        padding-block: 50px;
+    }
+    
+    .our-service .custom-service{
+        width: 70%;
+    }
+
+    .cta-banner .custom-cta p{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width:575px) {
+    #offcanvasNavbar {
+        width: 65%;
+    }
+}
